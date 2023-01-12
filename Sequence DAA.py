@@ -65,8 +65,22 @@ allign(len(s1),len(s2))
 #trace(m,trm,len(s1),len(s2))
 print(m)
 #print(trm)
-
-
+#%%
+ trm=[]    
+ def trace(mat , trm, x, y):
+     if x==1 and y==1:
+         return trm
+     elif (mat[x,y] == (mat[x - 1,y - 1] + mismatch) or mat[x,y] == (mat[x - 1,y - 1] + match)):
+         trm.append([x - 1, y - 1])
+         return trace(mat, trm, x-1, y-1)
+     elif (mat[x,y] == (mat[x-1,y] + mismatch) ):
+         trm.append([x-1, y])
+         return trace(mat, trm, x-1, y)
+     elif (mat[x,y] == (mat[x,y-1] + mismatch) ):
+         trm.append([x, y-1])
+         return trace(mat, trm, x, y-1)    
+trace(m,trm,len(s1),len(s2))
+print(trm)
 #%%
 
 def seq(seq1, seq2, match=1, mismatch=-1, gap=-1):
@@ -113,6 +127,7 @@ print("Score:", score)
 print("Alignment:")
 print(align1)
 print(align2)
+
 
 #%%
 
