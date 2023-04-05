@@ -6,6 +6,7 @@ These algorithms are commonly used in the field of computational intelligence an
 
 After experimenting using the Genetic Algorithm (GA), Cultural Algorithm (CA), Ant Colony Optimization (ACO), and Particle Swarm Optimization (PSO) algorithms, I found that GA gave the best accuracy for the problem.GA's crossover and mutation operators were able to maintain a balance between exploration and exploitation, which helped it avoid getting stuck in local optima. This allowed GA to consistently outperform the other algorithms in terms of accuracy.However, I acknowledge that the performance of each algorithm can vary depending on the parameters used.
 
+
 # References:
 1.Yang, X.-S., & Deb, S. (2009). Cultural Algorithms: Recent Developments, Innovations, and Applications. In Computational Intelligence: A Compendium (pp. 685-702). Springer.
 
